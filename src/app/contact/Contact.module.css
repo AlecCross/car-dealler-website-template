@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* Змінено для вертикального розташування на мобільних */
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    /* Відступи зроблені універсальними */
+    gap: 16px;
+
+    /* max-width: 1440px;і */
+    margin: 0 auto;
+    width: 100%;
+    /* Ширина адаптивна */
+}
+
+.contact {
+    font-family: 'Montserrat';
+    /* font-style: normal; */
+    /* font-weight: 100; */
+    /* Використовуємо відносні одиниці */
+    /* font-size: 4rem;  */
+    font-size: 72px;
+    line-height: 1.2;
+    /* text-transform: capitalize; */
+    color: #0A0F1C;
+}
+
+.text {
+    font-family: 'Manrope';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 1.5rem;
+    /* Відносна одиниця */
+    line-height: 1.4;
+
+    color: #0A0F1C;
+    text-align: justify;
+    /* Центруємо текст */
+    /* max-width: 800px; */
+    /* Обмежуємо ширину тексту */
+    /* width: 100%; */
+    font-size: 23px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container{
+       width: 608px;
+    }
+    .contact {
+        font-size: 2.5rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}

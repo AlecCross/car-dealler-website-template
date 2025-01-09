@@ -1,0 +1,10 @@
+.wrapper {
+    /* Hero */
+
+    /* Auto layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    gap: 30px;
+}

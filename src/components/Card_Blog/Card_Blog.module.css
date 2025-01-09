@@ -1,0 +1,33 @@
+.wrapper {
+    width: 400px; /* Коригування ширини */
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.textWrap {
+    padding: 24px;
+    text-align: left;
+}
+
+.data {
+    color: #8694B5;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #000;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 0 20px 20px;
+}

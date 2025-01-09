@@ -1,0 +1,26 @@
+.logos-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 0 16px;
+    /* Щоб забезпечити відступ від країв */
+    scrollbar-width: none;
+    /* Приховує скролбар у Firefox */
+}
+
+.logos-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Приховує скролбар у Chrome, Safari, Opera */
+}
+
+.grow-your-business {
+    flex: 0 0 auto;
+    /* Елементи не розтягуються */
+    width: 200px;
+    /* Ширина елемента */
+    height: 100px;
+    /* Висота елемента */
+    background-color: #e0e0e0;
+    /* Сірий для тесту */
+    border-radius: 8px;
+}

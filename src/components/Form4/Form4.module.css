@@ -1,0 +1,51 @@
+.wrapper {
+
+
+    /* Frame 4 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 119px;
+
+    width: 1312px;
+    height: 48px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.text {
+    /* Resolven © 2023 */
+
+    margin: 0 auto;
+    width: 72px;
+    height: 48px;
+
+    /* Body/2 */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    /* or 140% */
+    display: flex;
+    align-items: flex-end;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}

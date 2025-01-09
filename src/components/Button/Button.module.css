@@ -1,0 +1,45 @@
+/* Загальні стилі для всіх кнопок */
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 36px;
+    gap: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 32px; /* 140% */
+    text-transform: capitalize;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* width: 196px;
+    height: 73px; */
+}
+
+/* Default кнопка */
+.default {
+    background: #005CFF;
+    border-radius: 70px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Button 2 - обведена */
+.outline {
+    border: 2px solid #005CFF;
+    border-radius: 70px;
+    color: #005CFF;
+    background: transparent;
+}
+
+/* Button 3 - інший радіус */
+.variant3 {
+    background: #005CFF;
+    border-radius: 15px;
+    color: #FFFFFF;
+    border: none;
+}

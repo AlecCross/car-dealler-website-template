@@ -1,0 +1,72 @@
+.container {
+    background-color: #8694B5;
+    padding: 50px 20px;
+    /* Додаємо горизонтальний падінг */
+    margin: 40px auto;
+    /* Центруємо контейнер */
+    border-radius: 20px;
+    max-width: 1320px;
+    /* Забезпечує адаптивність */
+    width: 100%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 40px;
+    width: 629px;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 787px;
+    /* padding: 0 50px 40px 50px; */
+    padding-bottom: 40px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.input {
+    height: 73px;
+    /* padding: 10px 10px 10px 20px; */
+    font-size: 23px;
+    line-height: 32;
+}
+
+.textArea {
+    height: 123px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        min-width: 960px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        /* padding: 50px 10px; */
+        min-width: 300px;
+        /* width: 50%; */
+        margin: 40px auto;
+        padding: 50px 0px;
+    }
+
+    .forms {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        /* padding: 0 10%; */
+        width: 508px;
+    }
+
+    .text {
+        /* padding: 0 40px 40px  40px; */
+        margin: 0 auto;
+        width: 508px;
+    }
+}

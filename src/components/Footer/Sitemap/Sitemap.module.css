@@ -57,10 +57,8 @@
     width: 100px;
     height: 225px;
 
-
     /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
-
 }

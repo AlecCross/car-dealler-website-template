@@ -9,15 +9,15 @@ export default function Cotacts() {
   return (
     <div>
       <div className={styles.container}>
-        <di className={styles.contact}>Cotacts</di>
+        <div className={styles.contact}>Cotacts</div>
         <p className={styles.text}>
           We value diversity, sustainability and cultural transformation and will continue to work with various collaborators who share the same values.
         </p>
       </div>
-      <Logos/>
-      <Section5/>
-      <Logos/>
-      <OfficesAddresses/>
+      <Logos />
+      <Section5 />
+      <Logos />
+      <OfficesAddresses />
     </div>
   )
 }

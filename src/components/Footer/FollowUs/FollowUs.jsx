@@ -6,9 +6,11 @@ export default function FollowUs() {
     return (
         <div>
             <div className={styles.text}>FollowUs</div>
-            <img src='/icons/soc-icon-twitter.svg' alt="Icon" />
-            <img src='/icons/soc-icon-instagram.svg' alt="Icon" />
-            <img src='/icons/soc-icon-facebook.svg' alt="Icon" />
+            <div className={styles.icons}>
+                <img src='/icons/soc-icon-twitter.svg' alt="Icon" />
+                <img src='/icons/soc-icon-instagram.svg' alt="Icon" />
+                <img src='/icons/soc-icon-facebook.svg' alt="Icon" />
+            </div>
         </div>
     )
 }

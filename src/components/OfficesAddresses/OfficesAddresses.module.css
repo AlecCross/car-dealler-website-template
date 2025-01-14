@@ -7,6 +7,9 @@
   color: #333;
   font-family: Arial, sans-serif;
   line-height: 1.5;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 .title {
@@ -14,17 +17,22 @@
   font-weight: bold;
   margin-bottom: 24px;
   color: #000;
+  text-align: center;
+  width: 100%;
 }
 
 .list {
   display: flex;
   gap: 200px;
-  /* Простір між офісами */
+  width: 100%;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .office {
   flex: 1;
   min-width: 200px;
+  max-width: 400px;
 }
 
 .office p {
@@ -33,9 +41,38 @@
 
 /* Адаптивність */
 @media (max-width: 1024px) {
-
+  .container {
+    padding: 30px 15px;
+  }
+  
+  .list {
+    gap: 100px;
+  }
+  
+  .office {
+    min-width: 180px;
+  }
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
   
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .office {
+    min-width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
 }

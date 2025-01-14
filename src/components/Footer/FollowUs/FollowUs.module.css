@@ -20,5 +20,12 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
 
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 17px;
 }

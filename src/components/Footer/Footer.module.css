@@ -1,22 +1,59 @@
 .wrapper {
     /* height:  813.25; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-    /* font-family: monse; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    /* або інший розмір */
     font-weight: 900;
-    /* Для Black */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        padding: 10px 0;
+    }
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Лівий і правий елементи займають по 2 частини, центральний — 1 */
-    justify-content: space-between; /* Простір між елементами */
-    width: 100%; /* Розтягнути контейнер по ширині */
-    padding: 20px; /* Відступи всередині футера */
-    box-sizing: border-box; /* Ураховує padding у ширині */
-    background-color: #f5f5f5; /* Приклад кольору фону */
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    width: 100%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    gap: 40px;
+}
+
+.container > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 210px;
+    justify-content:  space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container > div:nth-child(2) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
 }

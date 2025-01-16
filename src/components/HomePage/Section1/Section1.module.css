@@ -1,0 +1,59 @@
+.wrapper {
+    border-radius: 60px;
+    background-color: #ffffff;
+    padding: 35px;
+}
+
+.container {
+    display: flex;
+    gap: 80px;
+    padding-top: 30px;
+}
+
+.container-right {
+    padding-top: 60px;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    /* налаштуйте відповідно до ваших потреб */
+    height: 400px;
+    /* налаштуйте відповідно до ваших потреб */
+}
+
+.images img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    z-index: 1;
+}
+
+.images img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    z-index: 2;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.text {}
+
+.list {
+    display: flex;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.listItem {}
+
+.listItemText {}
+
+.listItemIcon {}

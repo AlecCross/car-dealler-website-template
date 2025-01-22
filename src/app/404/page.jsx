@@ -6,7 +6,7 @@ export default function Error404() {
   return (
     <div className={styles.hero}>
       <div className={styles.container}>
-        <di className={styles.error404}>404</di>
+        <div className={styles.error404}>404</div>
         <Button>Back To Home</Button>
       </div>
       <p>

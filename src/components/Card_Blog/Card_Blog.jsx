@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from '../Card_Blog/Card_Blog.module.css'
-import Image from 'next/image'
 
-export default function Card_Blog() {
+export default function Card_Blog({ imageSrc }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.textWrap}>
@@ -10,7 +9,7 @@ export default function Card_Blog() {
         <div className={styles.title}>Seamlessly sync your systems for efficiency</div>
       </div>
       <div className={styles.container}>
-        <img src="/images/resolven6 1.png" alt="resolven6 1.png"/>
+        <img src={imageSrc} alt="Blog Image"/>
       </div>
     </div>
   )

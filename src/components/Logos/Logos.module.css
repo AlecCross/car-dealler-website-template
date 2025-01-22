@@ -6,6 +6,7 @@
     /* Щоб забезпечити відступ від країв */
     scrollbar-width: none;
     /* Приховує скролбар у Firefox */
+    margin: 55px 0;
 }
 
 .logos-wrapper::-webkit-scrollbar {

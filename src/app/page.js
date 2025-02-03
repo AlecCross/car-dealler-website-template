@@ -8,24 +8,21 @@ import Section5 from "@/components/HomePage/Section5/Section5";
 import Section6 from "@/components/HomePage/Section6/Section6";
 import Section1About from "@/components/AboutUS/Section1/Section1-About";
 
-
 export default function Home() {
   return (
     <div className={styles.home_page}>
-      {/* <div className={styles.container}> */}
-        <Section1 />
-        <Logos />
-        <Section2 />
-        <Logos />
-        <Section3 />
-        <Logos />
-        <Section4 />
-        <Logos />
-        <Section5 />
-        <Logos />
-        <Section6 />
-        <Section1About />
-      {/* </div> */}
+      <Section1 />
+      <Logos />
+      <Section2 />
+      <Logos />
+      <Section3 />
+      <Logos />
+      <Section4 />
+      <Logos />
+      <Section5 />
+      <Logos />
+      <Section6 />
+      <Section1About />
     </div>
   );
 }

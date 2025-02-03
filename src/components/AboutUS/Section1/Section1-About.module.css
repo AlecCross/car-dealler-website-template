@@ -1,23 +1,32 @@
 .section1 {
     display: flex;
-    flex-direction: row; /* Змінив на row для горизонтального вирівнювання */
-    padding: 0px; /* Додав відступи */
-    gap: 20px; /* Додав проміжок між елементами */
-    /* width: 1000px; */
-    justify-content: space-around;
+    flex-direction: row; /* Горизонтальне вирівнювання */
+    align-items: flex-start; /* Вирівнювання по верхньому краю */
+    padding: 70px 64px; /* Відступи */
+    gap: 16px; /* Проміжок між елементами */
+    margin-bottom: 55px;
 }           
 
 .container {
+    flex: 1
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Вирівнювання по лівому краю */
+    padding: 0px;
+    gap: 20px; /* Проміжок між елементами */
+    width: 380px; /* Ширина контейнера */
+    height: 171px; /* Висота контейнера */
+    flex: none; /* Без зростання */
+    order: 0; /* Порядок елемента */
+    flex-grow: 1; /* Зростання контейнера */
 }
 
 .image {
-    width: 80%;
-    height: 344px;
-    border: 1px solid #000000;
-    background-color: #f0f0f0; /* Додав фон для візуалізації секції */
-    flex: none; /* Додав flex для контролю поведінки */
-    order: 1; /* Встановив порядок елемента */
-    flex-grow: 0; /* Залишив без зростання */
+    width: 66.67%; /* Ширина зображення (дві треті) */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+    border-radius: 30px; /* Закруглені кути */
+    background-color: #f0f0f0; /* Фон для візуалізації секції */
+    flex: none; /* Без зростання */
+    order: 1; /* Порядок елемента */
+    flex-grow: 0; /* Без зростання */
 }

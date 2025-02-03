@@ -1,59 +1,193 @@
-.wrapper {
-    border-radius: 60px;
-    background-color: #ffffff;
-    padding: 35px;
-}
-
-.container {
+.hero {
     display: flex;
-    gap: 80px;
-    padding-top: 30px;
-}
-
-.container-right {
-    padding-top: 60px;
-}
-
-.images {
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* Змінено на center для центрування контенту */
+    gap: 2rem;
     width: 100%;
-    max-width: 700px;
-    /* налаштуйте відповідно до ваших потреб */
-    height: 400px;
-    /* налаштуйте відповідно до ваших потреб */
-}
-
-.images img:first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    z-index: 1;
-}
-
-.images img:last-child {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    z-index: 2;
+    /* Додано для заповнення ширини */
 }
 
 .title {
+    font-weight: bold;
+    font-size: 35px;
     text-align: center;
-    font-size: 40px;
+    padding: 0 55px;
 }
 
-.text {}
+.description {}
 
-.list {
+/* Контейнер з текстом */
+.heroContent {
+    flex: 1;
+    max-width: 100%;
+    /* Змінено на 100% для заповнення ширини */
+}
+
+/* Контейнер для картинок */
+.heroImages {
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    /* Змінено на 100% для заповнення ширини */
     display: flex;
-    gap: 10px;
-    padding-top: 40px;
+    justify-content: center;
+    /* Змінено на center для центрування контенту */
 }
 
-.listItem {}
+/* Основне зображення */
+.heroImages .mainImg {
+    width: 100%;
+    /* max-width: 400px; */
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
 
-.listItemText {}
+/* Друге зображення (накладання) */
+/* .heroImages .overlayImg {
+    position: absolute;
+    width: 60%;
+    max-width: 250px;
+    bottom: -20px;
+    right: 50px;
+    border-radius: 10px;
+} */
 
-.listItemIcon {}
+/* Стилі для карток з іконками */
+.heroFeatures {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    /* Додано для центрування карток */
+}
+
+/* Зміни для карток */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* **АДАПТИВНІСТЬ** */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 70px 25px;
+    }
+
+    .title {
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .description {
+        padding: 25px 0;
+        font-size: larger;
+        font-size: 30px;
+    }
+
+    .hero-images .overlay-img {
+        right: 0;
+        bottom: -10px;
+        width: 50%;
+    }
+
+    /* Друге зображення (накладання) */
+    .heroImages .overlayImg {
+        position: absolute;
+        width: 60%;
+        max-width: 250px;
+        bottom: -20px;
+        right: 50px;
+        border-radius: 10px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .heroImages .mainImg {
+        width: 80%;
+        /* max-width: 400px; */
+        border-radius: 10px;
+    }
+
+    /* Друге зображення (накладання) */
+    .heroImages .overlayImg {
+        position: absolute;
+        width:  100%;
+        /* max-width: 250px; */
+        /* bottom: -20px; */
+        right: -50px;
+        border-radius: 10px;
+    }
+
+
+    /* Стилі для карток з іконками */
+    .heroFeatures {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        /* Додано для центрування карток */
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {}
+
+    .heroFeatures {
+        flex-direction: column;
+    }
+
+    .title {
+        padding: 0;
+    }
+
+    .description {
+        font-size: 23px;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        border-radius: 8px;
+    }
+
+    /* Основне зображення */
+    .heroImages .mainImg {
+        width: 90%;
+        /* max-width: 400px; */
+        border-radius: 10px;
+    }
+
+    /* Друге зображення (накладання) */
+    .heroImages .overlayImg {
+        position: absolute;
+        width:  100%;
+        /* max-width: 250px; */
+        /* bottom: -20px; */
+        right: -50px;
+        border-radius: 10px;
+    }
+}

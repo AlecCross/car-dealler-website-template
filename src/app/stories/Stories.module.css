@@ -1,8 +1,29 @@
-.cards{
+.cards {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 20px; /* Зменшено для адаптації під 1024p та 640p */
     flex-wrap: wrap;
     align-items: flex-start; 
-    padding-top: 24px;
+    padding-top: 20px; /* Зменшено для адаптації під 1024p та 640p */
+    max-width: 1312px; /* Встановлено максимальну ширину для адаптації */
+    margin: 0 auto; /* Центрування компонента */
+    justify-content: center; /* Центрування елементів по горизонталі */
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        max-width: 960px;
+        gap: 15px; /* Зменшено для адаптації під 1024p */
+        padding-top: 16px; /* Зменшено для адаптації під 1024p */
+        justify-content: center; /* Центрування елементів по горизонталі */
+    }
+}
+
+@media (max-width: 640px) {
+    .cards {
+        max-width: 608px;
+        gap: 10px; /* Зменшено для адаптації під 640p */
+        padding-top: 12px; /* Зменшено для адаптації під 640p */
+        justify-content: center; /* Центрування елементів по горизонталі */
+    }
 }

@@ -1,17 +1,42 @@
 .section2 {
     display: flex;
     flex-direction: row;
-}   
+    gap: 55px;
+}
 
 .container {
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
 
-.image {
-    width: 80%;
-    height: 344px;
+/* .image {
+    flex: 2;
+    width: 30%; 
+    height: 30%;
     border: 1px solid #000000;
-    background-color: #f0f0f0; /* Додав фон для візуалізації секції */
+    background-color: #f0f0f0;
+} */
+
+.images {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
 }
 
+.images img:first-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    z-index: 1;
+}
+
+.images img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    z-index: 2;
+}

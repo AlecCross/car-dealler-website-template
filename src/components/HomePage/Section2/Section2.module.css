@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -14,7 +14,7 @@
     margin-bottom: 60px;
     text-align: center;
     color: #000;
-}
+    padding-right: 7}
 
 .services {
     display: grid;
@@ -27,11 +27,13 @@
     background: #fff;
     border-radius: 24px;
     padding: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid #000000;
+    height: 320px;
 }
 
 .serviceContent {
@@ -66,10 +68,14 @@
 }
 
 .serviceTitle {
+    /* word-break: break; */
+    overflow-wrap: break-word;
+ /* Додаємо для переносу слів на новий рядок */
     font-size: 32px;
     font-weight: 600;
     color: #000;
     margin: 0;
+    /* padding-right: 150px; */
 }
 
 .serviceDescription {

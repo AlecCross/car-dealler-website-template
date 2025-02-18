@@ -6,6 +6,9 @@
   --font-secondary: 'Manrope', Arial, sans-serif;
   --spacing-base: 1rem;
   --transition-speed: 0.3s;
+  --container-width: 1440px; /* Базова ширина контейнера */
+  --container-padding: 64px; /* Відступи на ПК */
+  --mobile-padding: 16px;    /* Відступи для мобільних */
 }
 
 /* Оптимізоване завантаження шрифтів */
@@ -96,5 +99,19 @@ a:hover {
   
   * {
     transition: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  :global(:root) {
+      --container-width: 960px; /* Ширина для планшетів */
+      --container-padding: 32px; /* Відступи для планшетів */
+  }
+}
+
+@media (max-width: 640px) {
+  :global(:root) {
+      --container-width: 100%; /* Ширина для мобільних */
+      --container-padding: 16px; /* Менші відступи */
   }
 }

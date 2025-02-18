@@ -1,7 +1,14 @@
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    gap: 10px;
 }
 
 .input {
@@ -15,7 +22,7 @@
     width: 100%;
     padding: 8px 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     height: 73px;
 }
 

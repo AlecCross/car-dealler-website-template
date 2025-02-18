@@ -16,7 +16,7 @@ export default function Home() {
       <Section2 />
       <Logos />
       <Section3 />
-      <Logos />
+      <Logos />ё
       <Section4 />
       <Logos />
       <Section5 />
